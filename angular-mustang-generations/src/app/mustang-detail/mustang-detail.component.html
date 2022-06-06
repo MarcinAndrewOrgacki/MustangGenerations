@@ -1,0 +1,15 @@
+<div *ngIf="mustang">
+
+  <h2>{{mustang.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{mustang.id}}</div>
+  <div>
+    <label for="mustang-name">Mustang Generation: </label>
+    <input id="mustang-name" [(ngModel)]="mustang.name" placeholder="name">
+    <label for="mustang-engine">Mustang Model: </label>
+    <input id="mustang-engine" [(ngModel)]="mustang.engine" placeholder="Model">
+    <button type="button" (click)="goBack()">GO BACK</button>
+    <button type="button" (click)="save()">SAVE</button>
+  </div>
+</div>
+
+

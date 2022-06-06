@@ -1,0 +1,24 @@
+
+<h2>Generations</h2>
+
+<ul class="mustangs">
+  <li *ngFor="let mustang of mustangs">
+    <a routerLink="/detail/{{mustang.id}}">
+      <span class="badge">{{mustang.id}}</span> {{mustang.name}}
+    </a>
+    <button type="button" class="delete" title="delete mustang"
+    (click)="delete(mustang)">DELETE</button>
+  </li>
+</ul>
+
+<div>
+  <label for="new-mustang">Mustang name: </label>
+  
+  <input id="new-mustang" #mustangName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+
+  <button type="button" class="add-button" (click)="add(mustangName.value); mustangName.value=''">
+    Add mustang
+  </button>
+</div>

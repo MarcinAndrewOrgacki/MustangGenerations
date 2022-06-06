@@ -1,0 +1,8 @@
+<h2>Generations</h2>
+<div class="mustangs-menu">
+  <a *ngFor="let mustang of mustangs" routerLink="/detail/{{mustang.id}}">
+    {{mustang.name}}
+  </a>
+</div>
+
+<app-mustang-search></app-mustang-search>
