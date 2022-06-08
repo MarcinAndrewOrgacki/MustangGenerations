@@ -13,7 +13,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 14, name: 'Third Generation (1979-1993)' },
       { id: 15, name: 'Fourth Generation (1994-2004)' },
       { id: 16, name: 'Fifth Generation (2005-2014)' },
-      { id: 17, name: 'Sixth Generation (2015-Present)' },
+      { id: 17, name: 'Sixth Generation (2015-Present)' }
       // { id: 18, name: 'Fox Body 1979 - 1993' },
       // { id: 19, name: 'Magma' },
       // { id: 20, name: 'Tornado' }

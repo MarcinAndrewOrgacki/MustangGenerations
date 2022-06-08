@@ -8,15 +8,12 @@ import { Mustang } from './mustang';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const mustangs = [
-      { id: 12, name: '1964 - 1966', engine: '5.4L' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr. IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' }
+      { id: 12, name: 'First Generation (1964-1973)' },
+      { id: 13, name: 'Second Generation (1974-1978)' },
+      { id: 14, name: 'Third Generation (1979-1993)' },
+      { id: 15, name: 'Fourth Generation (1994-2004)' },
+      { id: 16, name: 'Fifth Generation (2005-2014)' },
+      { id: 17, name: 'Sixth Generation (2015-Present)' }
     ];
     return {mustangs};
   }
